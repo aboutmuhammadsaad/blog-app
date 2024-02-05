@@ -4,6 +4,8 @@ import { fullBlogCard } from '@/lib/interface';
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 
+export const revalidate = 36 // revalidate at every 30 seconds
+
 async function getData(slug: string){
     const query = `
     *[_type=="blog" && slug.current=="${slug}"]{
