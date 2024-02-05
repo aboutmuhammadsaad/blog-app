@@ -31,8 +31,8 @@ export default async function BlogArticle({params}:{params: {slug: string}} ){
             <div>
                 <Image 
                 src={urlFor(data.titleImage).url()}
-                width={300}
-                height={300}
+                width={800}
+                height={800}
                 alt="Title image"
                 priority
                 className="rounded-lg mt-8 border"
