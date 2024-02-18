@@ -38,7 +38,7 @@ export default async function Home() {
           />
           <CardContent className='mt-5'>
             <h3 className='text-lg line-clamp-2'>{post.title}</h3>
-            <p className='line-clamp-3 text-sm mt-2 text-gray-600 dark:text-gray-300'>{post.smallDescription}</p>
+            <p className='line-clamp-2 text-sm mt-2 text-gray-600 dark:text-gray-300'>{post.smallDescription}</p>
           </CardContent>
           <Button asChild className='w-full mt-3'>
             <Link href={`/blog/${post.currentSlug}`}>Read More</Link>
